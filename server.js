@@ -45,6 +45,6 @@ app.post("/generate", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`السيرفر يعمل على المنفذ ${process.env.PORT}`);
 });
